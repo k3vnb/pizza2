@@ -1,5 +1,4 @@
 //business logic begins
-
 function Pizza(size, cheapToppings, expensiveToppings) {
   this.size = size;
   this.cheapToppings = cheapToppings;
@@ -32,7 +31,7 @@ $(document).ready(function() {
     $(".your-size").show();
     $("#show-size").append(pizzaSize);
   });
-  $("form#pizzaform").submit(function (event){
+  $("form#pizzaform").submit(function (event) {
     event.preventDefault();
     $("#your-order").empty();
     $(".display-result").show();
@@ -40,31 +39,29 @@ $(document).ready(function() {
     var pizzaSize = $("select#size-select").val();
 
     var cheapToppings = [];
-      $("input:checkbox[name=cheap-topping]:checked").each(function() {
+    $("input:checkbox[name=cheap-topping]:checked").each(function() {
       var allCheapToppings = $(this).val();
       cheapToppings.push(allCheapToppings);
     });//end of 'add'' cheap toppings select
-      console.log(cheapToppings);
 
     var expensiveToppings = [];
     $("input:checkbox[name=expensive-topping]:checked").each(function() {
-    var allExpensiveToppings = $(this).val();
-    expensiveToppings.push(allExpensiveToppings);
+      var allExpensiveToppings = $(this).val();
+      expensiveToppings.push(allExpensiveToppings);
     });//end of 'add' exp toppings select
-      console.log(expensiveToppings);
 
     var yourPizza = new Pizza(pizzaSize, cheapToppings, expensiveToppings);
 
     $("#your-order").append("$" + yourPizza.pizzaPrice() + ".00");
-    console.log(yourPizza.pizzaPrice());
+
     $("#confirm").click(function() {
       if ((cheapToppings.length != 0) && (expensiveToppings.length != 0)) {
-        $("#your-confirmed-order").append("One " + pizzaSize + " pizza topped with " + cheapToppings + " &" + expensiveToppings + ". Total Price: $" + yourPizza.pizzaPrice() + ".00 </br> Thank you for your Order!");
+        $("#your-confirmed-order").append("One " + pizzaSize + " pizza topped with " + cheapToppings + " & " + expensiveToppings + ". Total Price: $" + yourPizza.pizzaPrice() + ".00 </br> Thank you for your Order!");
       } else if ((cheapToppings.length != 0) && (expensiveToppings.length == 0)) {
         $("#your-confirmed-order").append("One " + pizzaSize + " pizza topped with " + cheapToppings + ". Total Price: $" + yourPizza.pizzaPrice() + ".00 </br> Thank you for your Order!");
-    }    else if ((cheapToppings.length == 0) && (expensiveToppings.length != 0)) {
+      } else if ((cheapToppings.length == 0) && (expensiveToppings.length != 0)) {
         $("#your-confirmed-order").append("One " + pizzaSize + " pizza topped with " +  expensiveToppings + ". Total Price: $" + yourPizza.pizzaPrice() + ".00 </br> Thank you for your Order!");
-    } else  {
+      } else  {
         $("#your-confirmed-order").append("One " + pizzaSize + " pizza. Total Price: $" + yourPizza.pizzaPrice() + ".00 </br> Thank you for your Order!");
       }
       $(".prepare-order").hide();

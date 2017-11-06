@@ -1,5 +1,5 @@
 .jumbotron {
-     background-image: url(img/pizza.jpg);
+  text-align: center;
 }
 
 .toppings {
@@ -12,6 +12,11 @@
 
 #confirm {
   display: none;
+  margin-left: 33%;
+}
+
+.confirm-order {
+  text-align: center;
 }
 
 .your-size {
@@ -31,6 +36,8 @@
   font-weight: bold;
 }
 
-.confirm {
-  margin-top: 15px;
+#pizzalife {
+  max-width: 200px;
+  min-height: 200px;
+  border-radius: 50%;
 }
