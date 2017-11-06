@@ -10,7 +10,7 @@ _Have you ever wanted to order a pizza? Pizzarrghh is a website that helps you p
 
 ## Setup/Installation Requirements
 
-* _Go on to the page at https://lemurriot.github.io/pizza/_
+* _Go on to the page at https://lemurriot.github.io/pizza2/_
 * _If you are using a modern browser the page will display_
 
 
