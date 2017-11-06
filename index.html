@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/master.css" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title>Pizza</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Pizzarggh</h1>
+      </div>
+      <div class="prepare-order">
+        <form id="pizzaform">
+          <div class="size-query">
+            <label>Select Size</label>
+            <select id="size-select" name="size-pizza">
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+            </select>
+            <br>
+            <a href="#" id="size-add" name="button" class="btn btn-primary">Select Size</a>
+          </div>
+          <div class="your-size">
+            <p>Your size selection: <span id="show-size"></span></p>
+          </div>
+          <hr>
+          <div class="toppings" id="tier-one-toppings">
+            <h2>Select Basic Toppings</h2>
+            <input type="checkbox" name="cheap-topping" value="Pepperoni">Pepperoni<br>
+            <input type="checkbox" name="cheap-topping" value="Onions">Onions<br>
+            </select>
+            <input type="checkbox" name="cheap-topping" value="Sausage">Sausage<br>
+            <input type="checkbox" name="cheap-topping" value="Tomatoes">Tomatoes<br>
+            <input type="checkbox" name="cheap-topping" value="Mushrooms">Mushrooms<br>
+            <input type="checkbox" name="cheap-topping" value="Pineapples">Pineapples<br>
+            </select>
+            <input type="checkbox" name="cheap-topping" value="Basil">Basil<br>
+            <input type="checkbox" name="cheap-topping" value="Feta">Feta Cheese<br>
+          </div>
+          <div class="toppings" id="tier-two-toppings"
+            <hr>
+            <h2>Select Specialty Toppings</h2>
+            <input type="checkbox" name="expensive-topping" value="Portobella">Portobella Mushrooms<br>
+            <input type="checkbox" name="expensive-topping" value="Olives">Calamata Olives<br>
+            </select>
+            <input type="checkbox" name="expensive-topping" value="Smoked Ham">Smoked Ham<br>
+            <input type="checkbox" name="expensive-topping" value="Ricotta">Fresh Ricotta<br>
+          </div>
+          <div>
+            <button type="submit" id="submit-form" class="btn btn-success toppings">Continue</button>
+          </div>
+        </form>
+        <div class="display-result card">
+          <div class="card-header">
+            <p>Your Total Price:</p>
+          </div>
+          <div class="card-body">
+            <p><span id="your-order"></span>
+            <br>
+            <a href="#" class="btn btn-info btn-block" id="confirm">Confirm your order</a>
+          </div>
+        </div>
+      </div>
+      <div class="confirm-order">
+        <p><span id="your-confirmed-order"></span></p>
+      </div>
+    </div> <!--end of container -->
+  </body>
+</html>

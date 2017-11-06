@@ -1,0 +1,36 @@
+.jumbotron {
+     background-image: url(img/pizza.jpg);
+}
+
+.toppings {
+  display: none;
+}
+
+.confirm-order {
+  display: none;
+}
+
+#confirm {
+  display: none;
+}
+
+.your-size {
+  display: none;
+}
+
+.display-result {
+  display: none;
+}
+
+.card {
+  margin: 20px;
+  padding: 5px;
+}
+
+#show-size {
+  font-weight: bold;
+}
+
+.confirm {
+  margin-top: 15px;
+}
