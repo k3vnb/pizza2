@@ -13,38 +13,39 @@
       <div class="jumbotron">
         <h1>Pizzarggh</h1>
       </div>
-      <div class="prepare-order">
-        <form id="pizzaform">
-          <div class="size-query">
-            <label>Select Size</label>
-            <select id="size-select" name="size-pizza">
-              <option value="small">Small</option>
-              <option value="medium">Medium</option>
-              <option value="large">Large</option>
-            </select>
-            <br>
-            <a href="#" id="size-add" name="button" class="btn btn-primary">Select Size</a>
-          </div>
-          <div class="your-size">
-            <p>Your size selection: <span id="show-size"></span></p>
-            <hr>
-          </div>
-          <div class="row">
-            <div class="toppings col-md-6" id="tier-one-toppings">
-              <h2>Select Basic Toppings</h2>
-              <input type="checkbox" name="cheap-topping" value="Pepperoni">Pepperoni<br>
-              <input type="checkbox" name="cheap-topping" value="Onions">Onions<br>
-              <input type="checkbox" name="cheap-topping" value="Sausage">Sausage<br>
-              <input type="checkbox" name="cheap-topping" value="Tomatoes">Tomatoes<br>
-              <input type="checkbox" name="cheap-topping" value="Mushrooms">Mushrooms<br>
-              <input type="checkbox" name="cheap-topping" value="Pineapples">Pineapples<br>
-              <input type="checkbox" name="cheap-topping" value="Basil">Basil<br>
-              <input type="checkbox" name="cheap-topping" value="Feta">Feta Cheese<br>
+      <div class="main-content">
+        <div class="prepare-order">
+          <form id="pizzaform">
+            <div class="size-query">
+              <label>Select Size</label>
+              <select id="size-select" name="size-pizza">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+              </select>
+              <br>
+              <a href="#" id="size-add" name="button" class="btn btn-primary">Select Size</a>
             </div>
-            <div class="toppings col-md-6" id="tier-two-toppings">
-              <h2>Select Specialty Toppings</h2>
-              <input type="checkbox" name="expensive-topping" value="Portobella">Portobella Mushrooms<br>
-              <input type="checkbox" name="expensive-topping" value="Olives">Calamata Olives<br>
+            <div class="your-size">
+              <p>Your size selection: <span id="show-size"></span></p>
+              <hr>
+            </div>
+            <div class="row">
+              <div class="toppings col-md-6" id="tier-one-toppings">
+                <h2>Select Basic Toppings</h2>
+                <input type="checkbox" name="cheap-topping" value="Pepperoni">Pepperoni<br>
+                <input type="checkbox" name="cheap-topping" value="Onions">Onions<br>
+                <input type="checkbox" name="cheap-topping" value="Sausage">Sausage<br>
+                <input type="checkbox" name="cheap-topping" value="Tomatoes">Tomatoes<br>
+                <input type="checkbox" name="cheap-topping" value="Mushrooms">Mushrooms<br>
+                <input type="checkbox" name="cheap-topping" value="Pineapples">Pineapples<br>
+                <input type="checkbox" name="cheap-topping" value="Basil">Basil<br>
+                <input type="checkbox" name="cheap-topping" value="Feta">Feta Cheese<br>
+              </div>
+              <div class="toppings col-md-6" id="tier-two-toppings">
+                <h2>Select Specialty Toppings</h2>
+                <input type="checkbox" name="expensive-topping" value="Portobella">Portobella Mushrooms<br>
+                <input type="checkbox" name="expensive-topping" value="Olives">Calamata Olives<br>
               </select>
               <input type="checkbox" name="expensive-topping" value="Smoked Ham">Smoked Ham<br>
               <input type="checkbox" name="expensive-topping" value="Ricotta">Fresh Ricotta<br>
@@ -59,15 +60,20 @@
           </div>
           <div class="card-body">
             <p><span id="your-order"></span>
-            <hr>
-            <a href="#" class="btn btn-info" id="confirm">Confirm your order</a>
+              <hr>
+              <a href="#" class="btn btn-info" id="confirm">Confirm your order</a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="confirm-order">
-        <p><span id="your-confirmed-order"></span></p>
-        <img src="img/pizza.png" alt="pizza is life" id="pizzalife">
+        <div class="confirm-order">
+          <p><span id="your-confirmed-order"></span></p>
+          <img src="img/pizza.png" alt="pizza is life" id="pizzalife">
+        </div>
       </div>
     </div> <!--end of container -->
+    <div class="footer">
+      <span class="footerBy">by</span>
+      <img src="img/KevinBoyleLogo.png" alt="logo">
+    </div>
   </body>
 </html>
