@@ -2,14 +2,31 @@
   font-family: 'piratebaby';
   src: url('../fonts/baby_pirate.ttf');
 }
+body {
+  background-color: #80008091;
+}
 .jumbotron {
-  font: 3em 'piratebaby';
+  font: 2em 'piratebaby';
   color: white;
-  width: 100%;
+  width: 100%!important;
   height: 40vh;
+  margin-bottom: 0!important;
   background-image: url('../img/pizza.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+}
+.jumbo-filler {
+  width: 60%;
+}
+.jumbotron h1 {
+  font-size: 60px;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 50px;
 }
 
 
@@ -17,11 +34,15 @@
   display: none;
 }
 .container {
-  height: 150vh;
+  height: 110vh;
 }
 .main-content {
-  margin: 25px;
-  padding: 0 25px;
+  margin: 0 auto;
+  padding: 50px;
+  height: 100vh;
+  background-color: white;
+  border-left: .5px solid lightgrey;
+  border-right: .5px solid lightgrey;
 }
 
 .confirm-order {
@@ -40,7 +61,7 @@
 .footer img {
   height: 45px;
   width: auto;
-  margin: .5% 5% .5% .5%;
+  margin: .5% 15% .5% .5%;
 }
 .footerBy {
   font-size: 12px;
@@ -76,10 +97,10 @@
   max-width: 200px;
   min-height: 150px;
   border-radius: 50%;
-  animation: pizzaflip 2s ease-in;
+  animation: fade 2s ease-in;
 }
 
-@keyframes pizzaflip {
+@keyframes fade {
   from {
     opacity: 0;
   }
